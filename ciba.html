@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE CLASH Event</title>
+    <link rel="stylesheet" href="bg.css">
+    <link rel="stylesheet" href="navbar.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+    <style>
+       body {
+            margin: 0;
+            padding: 0;
+            
+		}
+
+        /* Main content styling */
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10%;
+            height: 100vh;
+            background-image: url("bg.jpg");
+            background-size: cover;
+        }
+
+        .leftBox{
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+		}
+        .events {
+            background-color: rgba(234, 227, 227, 0.2);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 10%;
+        }
+
+        .leftBox {
+            width: 40%;
+            margin-right: 20px;
+        }
+		.leftBox h1{
+			font-family: "Protest Guerrilla", sans-serif;
+  			font-weight: 400;
+  			font-style: normal;
+			font-size: 80px;
+			text-align: center;
+			margin-top: 5px;
+		}
+
+        .events {
+            width: 50%;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+
+        /* Button styling */
+        .form-group {
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 22px;
+            border-radius: 10px;
+            width: 200px;
+            height: 70px;
+			align-items: center;
+			margin-left: 90px;
+			font-family: "Protest Guerrilla", sans-serif;
+  			font-weight: 400;
+  			font-style: normal;
+			font-size: 30px;
+        }
+
+        button:hover {
+            background-color: #34ad3a;
+            outline: none;
+            border-color: #26bf47;
+            box-shadow: 0 0 15px #ffffff;
+        }
+
+
+        .event-info b {
+            color: #fefcfc;
+			line-height: 1.6;
+			
+        }
+
+        .event-description {
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        .instructions {
+            margin-top: 20px;
+            padding-left: 20px;
+			line-height: 1.6;
+        }
+
+        .instructions ol {
+            padding-left: 20px;
+        }
+		.instructions ol li {
+            margin-bottom: 10px;
+        }
+		.event-info {
+            margin-bottom: 20px;
+        }
+    
+        /* Responsive adjustments */
+        @media screen and (max-width: 690px) {
+            section {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20%;
+                justify-content: center;
+            }
+            .leftBox {
+                margin-top: 400%;
+                width: 99%;
+                margin-left: 8%;
+            }
+
+            .leftBox h1 {
+                font-size: 28px;
+            }
+
+            .events {
+                width: 80%;
+                margin: 0;
+                margin-bottom: 20px;
+
+            }
+
+            button {
+                width: 166px;
+                height: 47px;
+                font-size:23px;
+                background-color: #4CAF50;
+
+            }
+
+        }
+    
+    </style>
+</head>
+
+<body>
+
+    <!-- nav bar -->
+    <div class="topnav" id="myTopnav">
+        <a href="#about">Register</a>
+        <a href="#contact">Blogs & Education</a>
+        <div class="dropdown">
+            <button class="dropbtn">About Us
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Events</a>
+                <a href="#">Gallery</a>
+                <a href="#">Team</a>
+            </div>
+        </div>
+
+        <a href="#news"><abbr title="Startup Internship Program">SIP</abbr></a>
+        <a href="index.html" class="active">Home</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <!-- navbar end -->
+
+
+	 <!--background start--> 
+	 <div class="bg"></div>
+
+	 <div class="star-field">
+	 <div class="layer"></div>
+	 <div class="layer"></div>
+	 <div class="layer"></div>
+	 </div> 
+	 <!--background end-->
+    
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <section>
+        <div class ="leftBox">
+            <h1>CODE CLASH</h1>
+            <div class="codeslash" style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16" style="align-self:center; ">
+                <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+              </svg>
+            </div>
+            <div class="form-group" style="text-align: center;">
+                <button type="submit">REGISTER</button>
+            </div>
+        </div>
+        <div class="events">
+			<div class="event-info">
+				<!-- <b>Date/Time:</b> 1.30 – 2.30 pm (Day 2)<br> -->
+				<!-- <b>Tagline:</b> Think Fast, Pitch Smart : The ultimate startup trivia challenge -->
+			</div>
+	
+			<div class="event-description">
+				<b>Description:</b>CodeClash is an intense and thrilling coding competition where two coders face off against each other in a head-to-head coding challenge. In this format, each participant typically receives the same problem statement or set of coding tasks, and they compete to solve them within a specified time frame, often under intense time pressure.
+			</div>
+	
+			<div class="instructions">
+				<b>Instructions:</b>
+				<ol>
+					<li><b>Programming Language:</b> Participants are usually allowed to use their preferred programming languages and tools to implement their solutions. The winner is determined based on various factors such as the correctness of the solutions, the efficiency of the code, and possibly the speed of completion. </li>
+					<li><b>Interactive activities:</b> The atmosphere of  CodeClash is often highly competitive, with participants striving to outsmart and outcode their opponents while showcasing their coding skills and problem-solving abilities .</li>
+					<li><b>Live leaderboard:</b> Track your progress and see how you rank against your peers on our live leaderboard. CodeClash, consists of  elimination in every round,  which builds intense competition, showcasing participants' coding skills and fostering excitement and camaraderie within the coding community.</li>
+					<li><b>Prizes and giveaways:</b>"Compete to be on top and win big! The winner of our 1v1 Code Clash walks away with a cash prize of <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                        <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                    </svg>2000!"</li>
+				</ol>
+                <b>Challenge your coding skills, network with fellow enthusiasts, and have a blast! Join our  Code Clash today and register for the ultimate coding showdown!</b>
+                    
+                <b><li>Register today!</li></b>
+			</div>
+		</div>
+     
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAPING BONANZA Event</title>
+    <link rel="stylesheet" href="bg.css">
+    <link rel="stylesheet" href="navbar.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            
+		}
+
+        /* Main content styling */
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10%;
+            height: 100vh;
+            background-image: url("bg.jpg");
+            background-size: cover;
+        }
+
+        .leftBox{
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+		}
+        .events {
+            background-color: rgba(234, 227, 227, 0.2);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 10%;
+        }
+
+        .leftBox {
+            width: 40%;
+            margin-right: 20px;
+        }
+		.leftBox h1{
+			font-family: "Protest Guerrilla", sans-serif;
+  			font-weight: 400;
+  			font-style: normal;
+			font-size: 80px;
+			text-align: center;
+			margin-top: 5px;
+		}
+
+        .events {
+            width: 50%;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+
+        /* Button styling */
+        .form-group {
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 22px;
+            border-radius: 10px;
+            width: 200px;
+            height: 70px;
+			align-items: center;
+			margin-left: 90px;
+			font-family: "Protest Guerrilla", sans-serif;
+  			font-weight: 400;
+  			font-style: normal;
+			font-size: 30px;
+        }
+
+        button:hover {
+            background-color: #34ad3a;
+            outline: none;
+            border-color: #26bf47;
+            box-shadow: 0 0 15px #ffffff;
+        }
+
+
+        .event-info b {
+            color: #fefcfc;
+			line-height: 1.6;
+			
+        }
+
+        .event-description {
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        .instructions {
+            margin-top: 20px;
+            padding-left: 20px;
+			line-height: 1.6;
+        }
+
+        .instructions ol {
+            padding-left: 20px;
+        }
+		.instructions ol li {
+            margin-bottom: 10px;
+        }
+		.event-info {
+            margin-bottom: 20px;
+        }
+    
+        /* Responsive adjustments */
+        @media screen and (max-width: 690px) {
+            section {
+                flex-direction: column;
+                align-items: center;
+				margin-top: 50%;
+				justify-content: center;
+            }
+			.button{
+				margin:none;
+			}
+            
+            .events {
+                width: 80%;
+                margin: 0;
+                margin-bottom: 20px;
+				
+            }
+			
+		}
+    </style>
+</head>
+
+<body>
+
+    <!-- nav bar -->
+    <div class="topnav" id="myTopnav">
+        <a href="#about">Register</a>
+        <a href="#contact">Blogs & Education</a>
+        <div class="dropdown">
+            <button class="dropbtn">About Us
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Events</a>
+                <a href="#">Gallery</a>
+                <a href="#">Team</a>
+            </div>
+        </div>
+
+        <a href="#news"><abbr title="Startup Internship Program">SIP</abbr></a>
+        <a href="index.html" class="active">Home</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <!-- navbar end -->
+
+
+	 <!--background start--> 
+	 <div class="bg"></div>
+
+	 <div class="star-field">
+	 <div class="layer"></div>
+	 <div class="layer"></div>
+	 <div class="layer"></div>
+	 </div> 
+	 <!--background end-->
+    
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <section>
+        <div class="leftBox">
+            <h1>BOOTSTRAPING BONANZA</h1>
+            <div class="form-group">
+                <button type="submit">REGISTER</button>
+            </div>
+        </div>
+        <div class="events">
+			<div class="event-info">
+				<b>Date/Time:</b> 1.30 – 2.30 pm (Day 2)<br>
+				<b>Tagline:</b> Think Fast, Pitch Smart : The ultimate startup trivia challenge
+			</div>
+	
+			<div class="event-description">
+				<b>Description:</b> Get ready to test your entrepreneurial knowledge and have some fun at the E-Cell's [Bootstraping Bonanza]! This exciting event will combine challenging quizzes with engaging activities, all designed to help you learn, network, and grow as an aspiring entrepreneur.
+			</div>
+	
+			<div class="instructions">
+				<b>What to Expect:</b>
+				<ol>
+					<li><b>Brain-teasing quizzes:</b> Put your entrepreneurial knowledge to the test with a variety of trivia questions covering everything from business basics to startup success stories.</li>
+					<li><b>Interactive activities:</b> Participate in fun and engaging activities designed to spark your creativity, challenge your thinking, and help you network with other aspiring entrepreneurs.</li>
+					<li><b>Live leaderboard:</b> Track your progress and see how you rank against your peers on our live leaderboard.</li>
+					<li><b>Prizes and giveaways:</b> Compete for exciting prizes and giveaways throughout the event.</li>
+				</ol>
+                <b>This seminar is perfect for:</b>
+                <ol>
+                    <li>>Aspiring entrepreneurs of all levels</li>
+                    <li>>Students interested in learning more about business</li>
+                    <li>> Who wants to have a fun and informative time</li>
+                </ol>
+                <b>Don't miss out on this exciting opportunity to:</b>
+                <ol>
+                    <li>Test your entrepreneurial knowledge</li>
+                    <li>Network with other aspiring entrepreneurs</li>
+                    <li>Have some fun!</li>
+                    <li>Register today!</li>
+                </ol>
+			</div>
+		</div>
+     
+    </section>
+</body>
+
+</html>

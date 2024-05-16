@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIVIA</title>
+    <link rel="stylesheet" href="bg.css">
+    <link rel="stylesheet" href="navbar.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+    <style>
+         section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("bg.jpg");
+            background-size: cover;
+        }
+
+        .leftBox{
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+		}
+        .events {
+            background-color: rgba(234, 227, 227, 0.2);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .leftBox {
+            width: 40%;
+            /* margin-right: 20px; */
+        }
+		.leftBox h1{
+			font-family: "Protest Guerrilla", sans-serif;
+  			font-weight: 400;
+  			font-style: normal;
+			font-size: 80px;
+			text-align: center;
+			margin-top: 5px;
+		}
+
+        .events {
+            width: 50%;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+
+        /* Button styling */
+        .form-group {
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #fe019a;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 22px;
+            border-radius: 10px;
+            width: 200px;
+            height: 70px;
+			align-items: center;
+			/* margin-left: 90px; */
+			font-family: "Protest Guerrilla", sans-serif;
+  			font-weight: 400;
+  			font-style: normal;
+			font-size: 30px;
+        }
+
+        button:hover {
+            background-color: #b400cc;
+            outline: none;
+            border-color: #ff05f3;
+            box-shadow: 0 0 20px #ffffff;
+        }
+
+
+        .event-info b {
+            color: #fefcfc;
+			line-height: 1.6;
+			
+        }
+
+        .event-description {
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        .instructions {
+            margin-top: 20px;
+            padding-left: 20px;
+			line-height: 1.6;
+        }
+
+        .instructions ol {
+            padding-left: 20px;
+        }
+		.instructions ol li {
+            margin-bottom: 10px;
+        }
+		.event-info {
+            margin-bottom: 20px;
+        }
+    
+        /* Responsive adjustments */
+        @media screen and (max-width: 690px) {
+            section {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20%;
+                justify-content: center;
+            }
+            .leftBox {
+                 margin-top: 100%; 
+                width: 99%;
+                margin-left: 8%;
+            }
+
+            .leftBox h1 {
+                font-size: 28px;
+            }
+
+            .events {
+                width: 80%;
+                margin: 0;
+                margin-bottom: 20px;
+
+            }
+
+            button {
+                width: 166px;
+                height: 47px;
+                font-size:23px;
+                background-color: #fe019a;
+
+            }
+
+        }
+    </style>
+</head>
+<body>
+
+	 <!--background start--> 
+	 <div class="bg"></div>
+
+	 <div class="star-field">
+	 <div class="layer"></div>
+	 <div class="layer"></div>
+	 <div class="layer"></div>
+	 </div> 
+	 <!--background end-->
+
+    <section>
+        <div class="leftBox">
+            <h1>E-CELL TOURNAMENT</h1>
+            <div class="form-group">
+                <button type="submit">REGISTER</button>
+            </div>
+        </div>
+        <div class="events">
+			<div class="event-info">
+				<b>Date/Time:</b> 6TH MARCH (Day 2) 9:15 AM - 2:30 PM <br>
+                <b>VENUE: -</b> SEMINAR HALL (3RD FLOOR)
+
+			</div>
+	
+			<div class="event-description">
+			<b>Description:</b>Description:
+            In an "E-cell vs E-cell" competition, teams E-cell and E-cell compete to develop and present a product or solution to judges. The event promotes creativity, innovation, and problem-solving skills, fostering entrepreneurial thinking and healthy competition. Judges assess offerings based on feasibility, market potential, and presentation quality. The winning team is chosen based on their product excellence and presentation skills.
+			</div>
+	
+			<div class="instructions">
+				<b>INSTRUCTIONS:</b>
+				<ol>
+					<li><b>Team Composition:</b> Each team comprises 2-4 members.</li>
+					<li><b>Domain Selection:</b> Teams choose any industry/domain for their solution.</li>
+					<li><b>Problem Identification:</b>  Teams identify a real-world problem.</li>
+				    <li><b>Product/Solution Development: Teams conceptualize,design, and develop their solution.Prizes and giveaways:</b> Compete for exciting prizes and giveaways throughout the event.</li>
+                    <li><b>Presentation:</b>Teams present their solution covering problem, solution, market analysis, feasibility, and impact within a fixed time.</li>
+                    <li><b>Judging Criteria:</b>Judges evaluate innovation, creativity, problem-solving, market potential, feasibility, viability, and presentation.</li>
+                    <li><b>Intellectual Property Rights:</b>Teams ensure no infringement of existing patents or copyrights. Collaboration and Fairness: Teams work independently, avoiding collaboration with opponents, maintaining fair and ethical conduct.</li>
+                
+                </ol>
+                <b>REGISTRATION FEES ₹500/- Per team
+                    <br>Prize Pool : ₹11000/-</b>
+
+			</div>
+		</div>
+     
+    </section>
+</body>
+
+</html>
